@@ -19,3 +19,7 @@
     1. slack 앱을 통한 실시간 문자 알림 자동화와 웹 링크를 제공
     2. 실시간 대기 정보 분석 시각화
     3. chatgpt api를 활용하여 탄소 중립 실천 방안 및 건강 유의 정보를 전달
+
+
+- [시연 영상](https://github.com/JHyun0302/2023_InhaHackerTon/issues/8)
+  
