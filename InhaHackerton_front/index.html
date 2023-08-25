@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Eco Bytes</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light justify-content-center">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="./index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!-- /.navbar -->
+
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Eco Bytes</h1>
+          </div>
+
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small card -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>2</h3>
+
+                <p>종합 대기질 지수 등급</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small card -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                <p>종합 대기질 농도</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small card -->
+            <div class="small-box bg-success">
+              <!-- warning -->
+              <div class="inner">
+                <h3>2</h3>
+
+                <p>초미세먼지 등급</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small card -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>-</h3>
+
+                <p>초미세먼지 농도</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+
+        <div class="row">
+          <div class="callout callout-danger">
+            <h5>GPT  요약</h5>
+  
+            <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire
+              soul,
+              like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="callout callout-info">
+            <h5>I am an info callout!</h5>
+
+            <p>Follow the steps to continue to payment.</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Line chart -->
+            <div class="card card-primary card-outline">
+              <div class="card-header" >
+                <h3 class="card-title">
+                  대기 오염물질
+                </h3>
+
+              </div>
+              <div class="card-body">
+                <div id="line-chart" style="height: 600px;">
+                  <img src="https://www.airkorea.or.kr/file/proxyImage?fileName=2023/07/14/AQFv1_09h.20230714.KNU_09_01.PM10.2days.ani.gif" alt="" style="height: 600px; width: 100%;"> 
+                </div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+
+            
+
+          </div>
+          <!-- /.col -->
+
+          <div class="col-md-4">
+            <!-- Bar chart -->
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h3 class="card-title">
+                  <i class="far fa-chart-bar"></i>
+                  Bar Chart
+                </h3>
+              </div>
+              <div class="card-body">
+                <div id="bar-chart" style="height: 300px;"></div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+
+            <!-- chat chart -->
+            <div class="row">
+              <div class="col-md-12">
+                <!-- DIRECT CHAT PRIMARY -->
+                <div class="card card-primary card-outline direct-chat direct-chat-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">채팅방</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <!-- Conversations are loaded here -->
+                    <div class="direct-chat-messages">
+                      <!-- Message. Default to the left -->
+                      <div class="direct-chat-msg">
+                        <div class="direct-chat-infos clearfix">
+                          <span class="direct-chat-name float-left">기쁨의 눈물바다에 라이언</span>
+                          <span class="direct-chat-timestamp float-right">07.14 12:00 am</span>
+                        </div>
+                        <!-- /.direct-chat-infos -->
+                        <img class="direct-chat-img" src="./images/lion.jpg" alt="Message User Image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          안녕하세요.
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+      
+                      <!-- Message to the right -->
+                      <div class="direct-chat-msg right">
+                        <div class="direct-chat-infos clearfix">
+                          <span class="direct-chat-name float-right">선풍기에 바람쐬는 어피치</span>
+                          <span class="direct-chat-timestamp float-left">07.14 12:05 am</span>
+                        </div>
+                        <!-- /.direct-chat-infos -->
+                        <img class="direct-chat-img" src="./images/peach.jpg" alt="Message User Image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          ㅎㅇㅎㅇ
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+                    </div>
+                    <!--/.direct-chat-messages-->
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <form action="#" method="post">
+                      <div class="input-group">
+                        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                        <span class="input-group-append">
+                          <button id="clickButton" type="submit" class="btn btn-primary">Send</button>
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.card-footer-->
+                </div>
+                <!--/.direct-chat -->
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+
+          <!-- 대기 오염 물질 정보 -->
+          <div class="col-md-4">
+            <div class="row">
+              <div class="card" style="width: 100%;">
+                <div class="card-header">
+                  <h3 class="card-title">대기오염 물질 정보</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- we are adding the accordion ID so Bootstrap's collapse plugin detects it -->
+                  <div id="accordion">
+                    <div class="card card-primary">
+                      <div class="card-header">
+                        <h4 class="card-title w-100">
+                          <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+                            
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-danger">
+                      <div class="card-header">
+                        <h4 class="card-title w-100">
+                          <a class="d-block w-100" data-toggle="collapse" href="#collapseTwo">
+                            오존 (O3)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          배기가스 등에 의해 질소화합물이 배출됩니다. 휘발성유기화합물은 자동차, 화학공장, 정유공장과 같은 산업시설과 자연적 생성 등 다양한 배출원에서 발생하는데요.</br></br>
+이러한 대류권에서 햇빛과 질소 산화물, 휘발성 유기화합물을 만나 산소 원자가 되고, 이 산소 원자가 주변의 산소 기체와 결합하여 오존이 생성됩니다.</br></br>
+
+오존은 유독 여름철에 많이 발생합니다. 그 이유는 바로 여름철 강한 햇빛이 일으키는 이러한 오존의 생성을 더 활성화시키기 때문입니다.</br></br>
+
+오존은 장시간 노출되면 기침, 눈의 통증, 호흡 곤란 등을 일으킬 수 있는데요. 특히, 기도 중에서도 하부 기도를 심하게 자극하여, 기침, 천명, 가슴통증을 일으킵니다. 폐 기능 감소도 동반될 수 있습니다.</br></br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-success">
+                      <div class="card-header">
+                        <h4 class="card-title w-100">
+                          <a class="d-block w-100" data-toggle="collapse" href="#collapseThree">
+                            아황산가스(SO2)
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          런던스모그의 주범이었던, 아황산가스는 황산화물의 일종으로 물에 잘 녹는 무색의 자극적인 냄새가 나는 불연성 가스입니다.</br></br> 
+천연으로는 화산, 온천 등에 존재하며 황화수소와 반응하여 황을 생성합니다. 황을 함유하는 석탄, 석유 등의 화석 연료가 연소될 때 인위적으로 배출되며, 주요 배출원은 발전소, 난방장치, 금속 제련공장, 정유공장 및 기타 산업공정 등에서 발생합니다.</br></br>
+
+가스상이지만, 황산염으로 변화하여 미세분진 형태로도 흡수됩니다. 아황산가스는 오존과 반대로 기도 중에서 상부 기도에서 많이 흡수됩니다. 기관지 수축을 유발시켜, 천식을 악화시키기도 합니다.</br></br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- Area chart -->
+            <!-- /.card -->
+          </div>
+          <!-- 대기오염 물질 정보 종료 -->
+        </div>
+        <!-- /.row -->
+
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="./js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./js/adminlte.min.js"></script>
+<!-- FLOT CHARTS -->
+<script src="./js/jquery.flot.js"></script>
+<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+<script src="./js/jquery.flot.resize.js"></script>
+<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+<script src="./js/jquery.flot.pie.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./js/demo.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js'></script>
+
+<!-- Page specific script -->
+<script>
+  $(function () {
+    /*
+     * Flot Interactive Chart
+     * -----------------------
+     */
+    // We use an inline data source in the example, usually data would
+    // be fetched from a server
+    var data        = [],
+        totalPoints = 100
+
+    function getRandomData() {
+
+      if (data.length > 0) {
+        data = data.slice(1)
+      }
+
+      // Do a random walk
+      while (data.length < totalPoints) {
+
+        var prev = data.length > 0 ? data[data.length - 1] : 50,
+            y    = prev + Math.random() * 10 - 5
+
+        if (y < 0) {
+          y = 0
+        } else if (y > 100) {
+          y = 100
+        }
+
+        data.push(y)
+      }
+
+      // Zip the generated y values with the x values
+      var res = []
+      for (var i = 0; i < data.length; ++i) {
+        res.push([i, data[i]])
+      }
+
+      return res
+    }
+
+    var interactive_plot = $.plot('#interactive', [
+        {
+          data: getRandomData(),
+        }
+      ],
+      {
+        grid: {
+          borderColor: '#f3f3f3',
+          borderWidth: 1,
+          tickColor: '#f3f3f3'
+        },
+        series: {
+          color: '#3c8dbc',
+          lines: {
+            lineWidth: 2,
+            show: true,
+            fill: true,
+          },
+        },
+        yaxis: {
+          min: 0,
+          max: 100,
+          show: true
+        },
+        xaxis: {
+          show: true
+        }
+      }
+    )
+
+    var updateInterval = 500 //Fetch data ever x milliseconds
+    var realtime       = 'on' //If == to on then fetch data every x seconds. else stop fetching
+    function update() {
+
+      interactive_plot.setData([getRandomData()])
+
+      // Since the axes don't change, we don't need to call plot.setupGrid()
+      interactive_plot.draw()
+      if (realtime === 'on') {
+        setTimeout(update, updateInterval)
+      }
+    }
+
+    //INITIALIZE REALTIME DATA FETCHING
+    if (realtime === 'on') {
+      update()
+    }
+    //REALTIME TOGGLE
+    $('#realtime .btn').click(function () {
+      if ($(this).data('toggle') === 'on') {
+        realtime = 'on'
+      }
+      else {
+        realtime = 'off'
+      }
+      update()
+    })
+    /*
+     * END INTERACTIVE CHART
+     */
+
+
+    /*
+     * LINE CHART
+     * ----------
+     */
+    //LINE randomly generated data
+
+    var sin = [],
+        cos = []
+    for (var i = 0; i < 14; i += 0.5) {
+      sin.push([i, Math.sin(i)])
+      cos.push([i, Math.cos(i)])
+    }
+    var line_data1 = {
+      data : sin,
+      color: '#3c8dbc'
+    }
+    var line_data2 = {
+      data : cos,
+      color: '#00c0ef'
+    }
+    $.plot('#line-chart', [line_data1, line_data2], {
+      grid  : {
+        hoverable  : true,
+        borderColor: '#f3f3f3',
+        borderWidth: 1,
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+        shadowSize: 0,
+        lines     : {
+          show: true
+        },
+        points    : {
+          show: true
+        }
+      },
+      lines : {
+        fill : false,
+        color: ['#3c8dbc', '#f56954']
+      },
+      yaxis : {
+        show: true
+      },
+      xaxis : {
+        show: true
+      }
+    })
+    //Initialize tooltip on hover
+    $('<div class="tooltip-inner" id="line-chart-tooltip"></div>').css({
+      position: 'absolute',
+      display : 'none',
+      opacity : 0.8
+    }).appendTo('body')
+    $('#line-chart').bind('plothover', function (event, pos, item) {
+
+      if (item) {
+        var x = item.datapoint[0].toFixed(2),
+            y = item.datapoint[1].toFixed(2)
+
+        $('#line-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
+          .css({
+            top : item.pageY + 5,
+            left: item.pageX + 5
+          })
+          .fadeIn(200)
+      } else {
+        $('#line-chart-tooltip').hide()
+      }
+
+    })
+    /* END LINE CHART */
+
+    /*
+     * FULL WIDTH STATIC AREA CHART
+     * -----------------
+     */
+    var areaData = [[2, 88.0], [3, 93.3], [4, 102.0], [5, 108.5], [6, 115.7], [7, 115.6],
+      [8, 124.6], [9, 130.3], [10, 134.3], [11, 141.4], [12, 146.5], [13, 151.7], [14, 159.9],
+      [15, 165.4], [16, 167.8], [17, 168.7], [18, 169.5], [19, 168.0]]
+    $.plot('#area-chart', [areaData], {
+      grid  : {
+        borderWidth: 0
+      },
+      series: {
+        shadowSize: 0, // Drawing is faster without shadows
+        color     : '#00c0ef',
+        lines : {
+          fill: true //Converts the line chart to area chart
+        },
+      },
+      yaxis : {
+        show: false
+      },
+      xaxis : {
+        show: false
+      }
+    })
+
+    /* END AREA CHART */
+
+    /*
+     * BAR CHART
+     * ---------
+     */
+
+    var bar_data = {
+      data : [[1,10], [2,8], [3,4], [4,13], [5,17], [6,9]],
+      bars: { show: true }
+    }
+    $.plot('#bar-chart', [bar_data], {
+      grid  : {
+        borderWidth: 1,
+        borderColor: '#f3f3f3',
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+         bars: {
+          show: true, barWidth: 0.5, align: 'center',
+        },
+      },
+      colors: ['#3c8dbc'],
+      xaxis : {
+        ticks: [[1,'January'], [2,'February'], [3,'March'], [4,'April'], [5,'May'], [6,'June']]
+      }
+    })
+    /* END BAR CHART */
+
+    /*
+     * DONUT CHART
+     * -----------
+     */
+
+    var donutData = [
+      {
+        label: 'Series2',
+        data : 30,
+        color: '#3c8dbc'
+      },
+      {
+        label: 'Series3',
+        data : 20,
+        color: '#0073b7'
+      },
+      {
+        label: 'Series4',
+        data : 50,
+        color: '#00c0ef'
+      }
+    ]
+    $.plot('#donut-chart', donutData, {
+      series: {
+        pie: {
+          show       : true,
+          radius     : 1,
+          innerRadius: 0.5,
+          label      : {
+            show     : true,
+            radius   : 2 / 3,
+            formatter: labelFormatter,
+            threshold: 0.1
+          }
+
+        }
+      },
+      legend: {
+        show: false
+      }
+    })
+    /*
+     * END DONUT CHART
+     */
+
+  })
+
+  /*
+   * Custom Label formatter
+   * ----------------------
+   */
+  function labelFormatter(label, series) {
+    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
+      + label
+      + '<br>'
+      + Math.round(series.percent) + '%</div>'
+  }
+
+  let answerr = ['안녕하세요','반갑습니다','저희 팀의 팀장은 상명대학교 김덕륜입니다.'];
+  // 채팅 메시지를 입력하고 'Send' 버튼을 클릭하면 새로운 채팅 메시지를 생성하는 함수
+document.getElementById('clickButton').addEventListener('click', function(event) {
+    // 폼 제출의 기본 동작을 취소합니다.
+    event.preventDefault();
+
+    // 채팅 메시지를 입력하는 input 요소
+    var input = document.querySelector('input[name="message"]');
+    
+    // 서버에 보낼 데이터를 생성합니다.
+    var data = {
+        answer: input.value,
+        // 필요한 추가 데이터를 여기에 추가하세요.
+    };
+
+    console.log(JSON.stringify(data));
+    
+    
+    
+    // // 서버에 POST 요청을 보냅니다.
+    // fetch('http://localhost:8080/post', { // 여기에 서버의 엔드포인트를 입력하세요.
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     credentials: "include",
+        
+    //     body: JSON.stringify(data),
+    // })
+    // .then(response => response.json())
+    // .then((data) => {
+    //     console.log('Success:', data);
+        
+    //     // 서버의 응답을 처리하는 코드를 여기에 작성하세요.
+    //     // 예를 들어, 새로운 채팅 메시지를 생성하거나, 
+    //     // 서버의 응답에 따라 페이지의 일부를 업데이트할 수 있습니다.
+    // })
+    fetch(`https://8bc4-165-246-248-200.ngrok-free.app/post`,{
+      method: 'POST',
+      headers:{
+        'Content-Type' : 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then((response) => response.text())
+    .then((data) => console.log(data));
+
+    // 채팅 메시지를 담을 div 요소 생성
+    var newChat = document.createElement('div');
+    newChat.className = 'direct-chat-msg right';
+    
+    // 채팅 메시지 정보를 담을 div 요소 생성
+    var chatInfo = document.createElement('div');
+    chatInfo.className = 'direct-chat-infos clearfix';
+    
+    // 채팅 메시지를 보낸 사람의 이름을 담을 span 요소 생성
+    var chatName = document.createElement('span');
+    chatName.className = 'direct-chat-name float-right';
+    chatName.innerText = '선풍기에 바람쐬는 어피치'; // 여기에 채팅 메시지를 보낸 사람의 이름을 입력하세요.
+    
+    // 채팅 메시지를 보낸 시간을 담을 span 요소 생성
+    var chatTimestamp = document.createElement('span');
+    chatTimestamp.className = 'direct-chat-timestamp float-left';
+    chatTimestamp.innerText = new Date().toLocaleTimeString(); // 현재 시간을 입력합니다.
+    
+    // 채팅 메시지 텍스트를 담을 div 요소 생성
+    var chatText = document.createElement('div');
+    chatText.className = 'direct-chat-text';
+    chatText.innerText = input.value; // 입력한 채팅 메시지를 입력합니다.
+    
+    // 사용자의 이미지를 담을 img 요소 생성
+    var chatImg = document.createElement('img');
+    chatImg.className = 'direct-chat-img';
+    chatImg.src = './images/peach.jpg'; // 여기에 사용자의 이미지 URL을 입력하세요.
+    chatImg.alt = 'Message User Image';
+    
+    // 모든 요소를 적절한 위치에 추가합니다.
+    chatInfo.appendChild(chatName);
+    chatInfo.appendChild(chatTimestamp);
+    newChat.appendChild(chatInfo);
+    newChat.appendChild(chatImg);
+    newChat.appendChild(chatText);
+    
+    // 채팅 메시지를 담는 div 요소에 새로운 채팅 메시지를 추가합니다.
+    var chatMessages = document.querySelector('.direct-chat-messages');
+    chatMessages.appendChild(newChat);
+    
+    // 채팅 메시지 입력창을 비웁니다.
+    input.value = '';
+});
+
+
+
+</script>
+</body>
+</html>
